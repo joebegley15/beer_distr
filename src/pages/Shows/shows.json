@@ -1,20 +1,11 @@
 [
 	{
-		"name": "Tom's Comedy Club",
-		"price": "25",
-		"venue": "Tom's Comedy Club",
-		"location": "New Braunfels, TX",
-		"link": "https://tomscomedyclub.com/event/joe-begley-february-6th-8pm/",
-		"date": "FEB 13 THUR",
-		"time": "8PM"
-	},
-	{
-		"name": "Last Best",
-		"price": "25",
-		"venue": "Last Best",
-		"location": "Bozeman, MT",
-		"date": "MAR 14 FRI",
-		"time": "8 & 10PM",
-		"link": "https://www.tickettailor.com/events/lastbestcomedy/1531239"
+		"name": "Laugh Boston",
+		"price": "33",
+		"venue": "Laugh Boston",
+		"location": "BOSTON, MA",
+		"date": "AUG 14 THUR",
+		"time": "7PM",
+		"link": "https://wl.seetickets.us/event/joe-begley-700pm/649027?afflky=LaughBoston"
 	}
 ]
