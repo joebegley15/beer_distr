@@ -10,7 +10,7 @@ export default function BookUs() {
         <section className="home-story">
 
           <h1 className="text-xl text-bold text-tight">
-            Get in Touch With Us to Book
+            Get in Touch With Us
           </h1>
 
           <div>

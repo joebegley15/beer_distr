@@ -1,0 +1,23 @@
+.footer {
+	margin-top: 80px;
+	padding-bottom: 40px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	flex-wrap: wrap; // allows clean stacking on small screens
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	p {
+		margin: 0;
+		opacity: 0.7;
+	}
+}

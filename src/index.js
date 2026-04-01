@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import BookUs from './pages/BookUs';
 import './index.scss';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,6 +19,7 @@ root.render(
         <Route path="/services" element={<Services />} />
         <Route path="/book-us" element={<BookUs />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

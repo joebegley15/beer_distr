@@ -8,7 +8,7 @@ export default function Services() {
       <FixedCenter>
         <section className="home-story">
           <h1 className="text-xl text-bold text-tight">
-            We provide on-the-ground beverage sales support for live events.
+            Beer Hawkers that WORK
           </h1>
 
           <p className="text-md text-normal">
