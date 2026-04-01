@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
+import logo from "../../static/logo.png";
 
 import './Navbar.scss';
 
@@ -13,7 +14,9 @@ const Navbar = () => {
     <div id="navbar">
       <div id="navbar-desktop">
         <div className="left">
-          <Link to="/">home</Link>
+          <Link to="/">
+            <img src={logo} alt="logo" className="home-logo" />
+          </Link>
         </div>
         <div className="right">
           <Link to="/services">services</Link>
@@ -30,7 +33,9 @@ const Navbar = () => {
               onClick={closeMobile}
               className={`${mobileOpen ? ' open' : ' closed'}`}
             >
-              home
+              <Link to="/">
+                <img src={logo} alt="logo" className="home-logo" />
+              </Link>
             </Link>
           </div>
           <div className={`right ${mobileOpen ? ' open' : ' closed'}`}>
