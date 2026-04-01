@@ -20,8 +20,7 @@ const Navbar = () => {
         </div>
         <div className="right">
           <Link to="/services">services</Link>
-          <Link to="/experience">experience</Link>
-          <Link to="/join-the-crew">join the crew</Link>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRhZQyCdsi0JbcyConkMem5Cd1pZChOtG5hE8g9WGFgDvtKQ/viewform?usp=publish-editor">join the crew</a>
           <Link to="/book-us">book us</Link>
         </div>
       </div>
@@ -44,8 +43,7 @@ const Navbar = () => {
         </div>
         <div className={`dropdown${mobileOpen ? ' open' : ' closed'}`}>
           <Link to="/services" onClick={closeMobile}>services</Link>
-          <Link to="/experience" onClick={closeMobile}>experience</Link>
-          <Link to="/join-the-crew" onClick={closeMobile}>join the crew</Link>
+          <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeRhZQyCdsi0JbcyConkMem5Cd1pZChOtG5hE8g9WGFgDvtKQ/viewform?usp=publish-editor" onClick={closeMobile}>join the crew</Link>
           <Link to="/book-us" onClick={closeMobile}>book us</Link>
         </div>
       </div>
