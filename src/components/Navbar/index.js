@@ -6,24 +6,31 @@ import './Navbar.scss';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const closeMobile = () => setMobileOpen(false);
+
   return (
     <div id="navbar">
       <div id="navbar-desktop">
         <div className="left">
-          <Link to="/">joe begley</Link>
+          <Link to="/">home</Link>
         </div>
         <div className="right">
-          <a href="/shows">shows</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7qc131OjflHLorLBeXMMc7lx8G7EhZSZUwEzc-gFgTz4hUQ/viewform">contact</a>
-          <a href="/podcast">podcast</a>
-          <a href="https://www.youtube.com/@thejoebegs/videos">videos</a>
+          <Link to="/services">services</Link>
+          <Link to="/experience">experience</Link>
+          <Link to="/join-the-crew">join the crew</Link>
+          <Link to="/book-us">book us</Link>
         </div>
       </div>
       <div id="navbar-mobile">
         <div className="top">
           <div className="left">
-            <Link to="/" className={`${mobileOpen ? ' open' : ' closed'}`}>
-              joe begley
+            <Link
+              to="/"
+              onClick={closeMobile}
+              className={`${mobileOpen ? ' open' : ' closed'}`}
+            >
+              home
             </Link>
           </div>
           <div className={`right ${mobileOpen ? ' open' : ' closed'}`}>
@@ -31,10 +38,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`dropdown${mobileOpen ? ' open' : ' closed'}`}>
-          <a href="/shows">shows</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7qc131OjflHLorLBeXMMc7lx8G7EhZSZUwEzc-gFgTz4hUQ/viewform">contact</a>
-          <a href="/podcast">podcast</a>
-          <a href="https://www.youtube.com/@thejoebegs/videos">videos</a>
+          <Link to="/services" onClick={closeMobile}>services</Link>
+          <Link to="/experience" onClick={closeMobile}>experience</Link>
+          <Link to="/join-the-crew" onClick={closeMobile}>join the crew</Link>
+          <Link to="/book-us" onClick={closeMobile}>book us</Link>
         </div>
       </div>
     </div>
