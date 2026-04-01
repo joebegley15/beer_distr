@@ -20,7 +20,7 @@ const carouselImages = [
 
 const Home = () => {
   return (
-    <div className="home-page">
+    <div className="home-page page-offset">
       <ImageCarousel images={carouselImages} />
     </div>
   );
